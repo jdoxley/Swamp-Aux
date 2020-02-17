@@ -1,5 +1,5 @@
-#include "../config_macros.hpp"
 #define COMPONENT EVENT
+#include "../config_macros.hpp"
 LOG("Event Created");
 ["cameraView", {
 	params ["_unit", "_newCameraMode"];

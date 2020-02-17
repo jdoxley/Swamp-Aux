@@ -6,8 +6,23 @@ class CfgPatches {
         author = "Thunder";
         units[] = {};
         requiredAddons[] = {"cba_events"};
+        VERSION_CONFIG;
     };
 };
+
+class CfgSettings {
+    class CBA {
+        class Versioning {
+            class ADDON {
+                main_addon = ADDON;
+                class Dependencies {
+                    CBA[] = {"cba_events", {3,13,0}, "true"};
+                };
+            };
+        };
+    };
+};
+
 class CfgFunctions {
     class ADDON {
         class ThirdPersonCamera {

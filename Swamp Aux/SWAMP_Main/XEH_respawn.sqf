@@ -1,5 +1,5 @@
-#include "config_macros.hpp"
 #define COMPONENT Respawn
+#include "config_macros.hpp"
 params ["_unit"];
 _unit enableFatigue false;
 _unit setCustomAimCoef 0.3;
