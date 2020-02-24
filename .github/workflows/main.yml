@@ -1,0 +1,27 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Setup Python environment
+        uses: actions/setup-python@v1.1.1
+      
+      - name: Install Pip
+        run: python -m pip install --upgrade pip setuptools wheel
+        
+      - name: Install SQFLint
+        run: pip install SQFLint
+        
+      - name: SQF Validator
+        run: python tools/sqf_validator.py
+        
+      - name: Config Style Checker
+        run: python tools/config_style_checker.py
+        
+      - name: SQFLint
+        run: sqflint -d "Swamp Aux"/
