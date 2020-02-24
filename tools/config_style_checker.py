@@ -134,10 +134,8 @@ def main():
     args = parser.parse_args()
 
     # Allow running from root directory as well as from inside the tools directory
-    rootDir = "../Swamp Aux/"
-    if (os.path.exists("@AresModAchillesExpansion")):
-        rootDir = "@AresModAchillesExpansion"
-
+    rootDir = "Swamp Aux/"
+    
     for root, dirnames, filenames in os.walk(rootDir + '/' + args.module):
       for filename in fnmatch.filter(filenames, '*.cpp'):
         sqf_list.append(os.path.join(root, filename))
