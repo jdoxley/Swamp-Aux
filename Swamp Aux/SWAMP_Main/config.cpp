@@ -1,3 +1,4 @@
+#include "BIS_AddonInfo.hpp"
 #include "config_macros.hpp"
 
 class CfgPatches {
