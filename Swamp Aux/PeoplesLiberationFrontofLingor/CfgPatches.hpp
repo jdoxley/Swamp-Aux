@@ -61,7 +61,6 @@ class CfgPatches {
             "CUP_Creatures_Military_BAF",
             "A3_Sounds_F_Exp",
             "immersion_pops",
-            "jsrs_soundmod_complete_edition",
             "ace_gforces",
             "ace_movement",
             "ace_medical_feedback",
@@ -81,8 +80,6 @@ class CfgPatches {
             "CUP_Creatures_Military_Delta",
             "A3_Air_F_Heli",
             "CUP_Worlds_DustEffects",
-            "A3_Map_lingor3",
-            "A3_Map_dingor",
             "rhs_c_btr",
             "TFAR_IntercomDummy",
             "A3_Armor_F_Beta",
@@ -218,6 +215,6 @@ class CfgPatches {
             "po_factions_fic"
         };
         author = "CX-W Thunder";
-        authors[] = {"CX-W Thunder"};
+        authors[] = {"CX-W Thunder", "CX-W Flog"};
     };
 };
