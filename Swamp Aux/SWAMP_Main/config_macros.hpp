@@ -1,4 +1,4 @@
-#define DEBUG_MODE_NORMAL
+#define DEBUG_MODE_FULL
 #define PREFIX SWAMP
 #include "\x\cba\addons\main\script_macros_common.hpp"
 #include "version.hpp"

@@ -1,7 +1,8 @@
 #define COMPONENT Respawn
 #include "config_macros.hpp"
 params ["_unit"];
-_unit enableFatigue false;
-_unit setCustomAimCoef 0.3;
-_unit setUnitRecoilCoefficient 0.3;
-_unit enableStamina false;
+if(!(_unit isEqualTo player)) exitWith {};
+player enableFatigue false;
+player setCustomAimCoef 0.3;
+player setUnitRecoilCoefficient 0.3;
+player enableStamina false;

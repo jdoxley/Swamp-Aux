@@ -1,4 +1,3 @@
-#include "BIS_AddonInfo.hpp"
 #include "config_macros.hpp"
 
 class CfgPatches {
@@ -6,7 +5,7 @@ class CfgPatches {
         name = ADDON_NAME;
         author = "Thunder";
         units[] = {};
-        requiredAddons[] = {"cba_events"};
+        requiredAddons[] = {"cba_events", "ace_advanced_fatigue"};
         VERSION_CONFIG;
     };
 };
@@ -38,6 +37,10 @@ class Extended_PostInit_EventHandlers {
     class ADDON {
         init = QUOTE(call COMPILE_FILE(XEH_postInit));
     };
+    class ace_advanced_fatigue
+	{
+		init = "";
+	};
 };
 
 class Extended_GetOutMan_EventHandlers {
@@ -62,4 +65,28 @@ class Extended_InitPost_EventHandlers {
             init = QUOTE(call COMPILE_FILE(XEH_manInit));
         };
     };
+};
+
+class Extended_PreStart_EventHandlers
+{
+	class ace_advanced_fatigue
+	{
+		init = "";
+	};
+};
+
+class Extended_PreInit_EventHandlers
+{
+	class ace_advanced_fatigue
+	{
+		init = "";
+	};
+};
+
+class Extended_DisplayLoad_EventHandlers
+{
+	class RscDisplayMission
+	{
+		ace_advanced_fatigue = "";
+	};
 };

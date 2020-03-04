@@ -1,5 +1,4 @@
 #define COMPONENT GetOutMan
 #include "config_macros.hpp"
 params ["_unit"];
-LOG("GetOutMan Event");
-_unit switchCamera "INTERNAL";
+if(_unit isEqualTo player) then {_unit switchCamera "INTERNAL"};
