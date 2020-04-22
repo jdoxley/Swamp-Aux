@@ -17,14 +17,14 @@ class CfgPatches {
 #include "CfgFunctions.hpp"
 
 
-// class CfgSettings {
-//     class CBA {
-//         class Versioning {
-//             class SWAMPAUX {
-//                 class dependencies {
-//                     CBA[] = {"cba_events", {3,13,0}, "true"};
-//                 };
-//             };
-//         };
-//     };
-// };
+class CfgSettings {
+    class CBA {
+        class Versioning {
+            class ADDON {
+                class Dependencies {
+                    CBA[] = {"cba_events", {3,13,0}, "true"};
+                };
+            };
+        };
+    };
+};
