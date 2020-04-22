@@ -1,0 +1,13 @@
+#define MAINPREFIX x
+#define PREFIX SWAMP
+#include "script_version.hpp"
+#define VERSION MAJOR.MINOR
+#define VERSION_STR MAJOR.MINOR.PATCH
+#define VERSION_AR MAJOR,MINOR,PATCH
+#define AUTHOR Thunder
+
+#ifdef COMPONENT_BEAUTIFIED
+	#define COMPONENT_NAME QUOTE(Swamp Aux - COMPONENT_BEAUTIFIED)
+#else
+	#define COMPONENT_NAME QUOTE(Swamp Aux - COMPONENT)
+#endif
