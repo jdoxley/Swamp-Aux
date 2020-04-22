@@ -1,5 +1,4 @@
-#define COMPONENT PostInitMan
-#include "config_macros.hpp"
+#include "script_component.hpp"
 params ["_unit"];
 if(!(_unit isEqualTo player)) exitWith {}; 
 waitUntil{alive player};

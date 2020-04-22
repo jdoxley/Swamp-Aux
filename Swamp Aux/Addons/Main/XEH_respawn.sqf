@@ -1,5 +1,4 @@
-#define COMPONENT Respawn
-#include "config_macros.hpp"
+#include "script_component.hpp"
 params ["_unit"];
 if(!(_unit isEqualTo player)) exitWith {};
 player enableFatigue false;
